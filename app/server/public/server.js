@@ -18,25 +18,7 @@ app.get('/', (req, res)=> {
   res.send('Express server is up and running.');
 })
 
-//GET request to server
-app.get('/api', (req, res)=> {
-  
-});
 
-//POST request to server
-app.post('/api', (req, res)=> {
-
-})
-
-//DELETE request to server
-app.delete('/api', (req, res)=> {
-  
-})
-
-//PUT request to server
-app.put('/api', (req, res)=> {
-  
-});
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../../../build', 'index.html'));
